@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/txtTema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tema MQTT" />
+
+    <EditText
+        android:id="@+id/txtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mensaje"
+        android:layout_below="@id/txtTema"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnPublicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        android:layout_below="@id/txtMensaje"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSuscribir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suscribir"
+        android:layout_below="@id/btnPublicar"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/txtV_mensajesRecibidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSuscribir"
+        android:layout_marginTop="16dp"
+        android:text="Mensajes recibidos:"
+        android:textSize="20sp" />
+</RelativeLayout>
